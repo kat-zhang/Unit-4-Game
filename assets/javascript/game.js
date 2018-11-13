@@ -22,7 +22,17 @@ console.log(typeof gem4);
 
 $("#magic-number").text(goalNumber);
 
-var gemValues = [];
-var randomValue = Math.floor(Math.random()*4 ((12) +1));
-gemValues.push(randomValue);
-console.log(gemValues[i])
+$("#gem1-img").on("click", function() {
+    console.log("GEM 1 this function works");
+})
+
+$("#gem2-img").on("click", function() {
+    console.log("GEM 2 this function works");
+})
+  
+$("#gem3-img").on("click", function() {
+    console.log("GEM 3 this function works");
+})
+$("#gem4-img").on("click", function() {
+    console.log("GEM 4 this function works");
+})

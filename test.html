@@ -10,13 +10,13 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-        <div class="col" ><img src="assets/images/gem1.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem1"></div>
+        <div class="col" ><img src="assets/images/gem1.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem1-img"></div>
 
-        <div class="col"><button><img src="assets/images/gem2.jpg" class="rounded mx-auto d-block gem-image" alt="..."  id="gem2"></button></div>
+        <div class="col"><button><img src="assets/images/gem2.jpg" class="rounded mx-auto d-block gem-image" alt="..."  id="gem2-img"></button></div>
     
-        <div class="col" ><img src="assets/images/gem3.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem3"></div>
+        <div class="col" ><img src="assets/images/gem3.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem3-img"></div>
     
-        <div class="col" ><img src="assets/images/gem4.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem4"></div>
+        <div class="col" ><img src="assets/images/gem4.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem4-img"></div>
 
 
 
@@ -26,13 +26,22 @@
 
         <p id="magic-number" class="card-text">...</p>
     <script>
-      $("#gem2").on("click", function() {
-          console.log("im work");
-      })
-        
-      $("#gem3").on("click", function() {
-          console.log("i hope i work");
-      })
+     $("#magic-number").text(goalNumber);
+
+$("#gem1-img").on("click", function() {
+    console.log("GEM 1 this function works");
+})
+
+$("#gem2-img").on("click", function() {
+    console.log("GEM 2 this function works");
+})
+  
+$("#gem3-img").on("click", function() {
+    console.log("GEM 3 this function works");
+})
+$("#gem4-img").on("click", function() {
+    console.log("GEM 4 this function works");
+})
         
 
 var goalNumber = Math.floor(Math.random()*(102)+19);
@@ -57,7 +66,8 @@ console.log(typeof gem4);
 
 $("#magic-number").text(goalNumber);
 
-
+gem1-img.attr("value", gem1[0]);
+console.log(gem1-img.value);
         
     </script>
 </body>
