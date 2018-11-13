@@ -6,34 +6,56 @@
     <title>Testing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-    <script>
-      
+        <div class="col" ><img src="assets/images/gem1.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem1"></div>
 
+        <div class="col"><button><img src="assets/images/gem2.jpg" class="rounded mx-auto d-block gem-image" alt="..."  id="gem2"></button></div>
+    
+        <div class="col" ><img src="assets/images/gem3.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem3"></div>
+    
+        <div class="col" ><img src="assets/images/gem4.jpg" class="rounded mx-auto d-block gem-image" alt="..." id="gem4"></div>
+
+
+
+
+
+
+
+        <p id="magic-number" class="card-text">...</p>
+    <script>
+      $("#gem2").on("click", function() {
+          console.log("im work");
+      })
+        
+      $("#gem3").on("click", function() {
+          console.log("i hope i work");
+      })
+        
 
 var goalNumber = Math.floor(Math.random()*(102)+19);
 console.log("magic Number", goalNumber);
 console.log(typeof goalNumber);   
 
-
 var gem1 = Math.floor(Math.random()*(12) +1);
-console.log("gem value", gem1); 
+console.log("gem1 value", gem1); 
 console.log(typeof gem1);
 
 var gem2 =  Math.floor(Math.random()*(12) +1);
-console.log(gem2);
+console.log("gem2 value",gem2);
 console.log(typeof gem2);
 
 var gem3 = Math.floor(Math.random()*(12) +1);
-console.log(gem3);
+console.log("gem3 value", gem3);
 console.log(typeof gem3);
 
 var gem4 = Math.floor(Math.random()*(12) +1);
-console.log(gem4);
+console.log("gem4 value", gem4);
 console.log(typeof gem4);
 
+$("#magic-number").text(goalNumber);
 
 
         

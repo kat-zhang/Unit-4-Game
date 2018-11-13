@@ -5,10 +5,24 @@
 .display-4 {
     font-family: 'Chakra Petch';
     font-size: 5rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
- .lead {
-     padding-left:50px;
-     padding-right: 50px;
+    font-weight: 300;  
+}    
+ 
+.card-header {
+    font-family: 'Chakra Petch';
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(73, 7, 160);
  }
+ #magic-number {
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+ }
+
+ .btn-primary {
+    
+    background-color: #08b0da;
+    border-color: #08b0da;
+}
