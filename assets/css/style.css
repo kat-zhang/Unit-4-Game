@@ -1,3 +1,14 @@
 .container {
     margin-bottom: 50px;
 }
+
+.display-4 {
+    font-family: 'Chakra Petch';
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+ .lead {
+     padding-left:50px;
+     padding-right: 50px;
+ }
