@@ -1,38 +1,69 @@
 
 
-var goalNumber = Math.floor(Math.random()*(102)+19);
+var goalNumber = ;
+// var toClick = ["#gem1-img","#gem2-img","#gem3-img","#gem4-img"];
+var gem1 =;
+var gem2 =;
+var gem3 =;
+var gem4 =;
+var wins = 0;
+var losses = 0;
+var counter = 0;
+
+
+
+
+
+function randomVals() {
+    goalNumber = Math.floor(Math.random()*(102)+19);
+    gem1 = Math.floor(Math.random()*(12) +1);
+    gem2 = Math.floor(Math.random()*(12) +1);
+    gem3 = Math.floor(Math.random()*(12) +1);
+    gem4 = Math.floor(Math.random()*(12) +1);
+}
 console.log("magic Number", goalNumber);
-console.log(typeof goalNumber);   
-
-var gem1 = Math.floor(Math.random()*(12) +1);
 console.log("gem1 value", gem1); 
-console.log(typeof gem1);
+// console.log(typeof goalNumber);   
 
-var gem2 =  Math.floor(Math.random()*(12) +1);
-console.log("gem2 value",gem2);
-console.log(typeof gem2);
+// $("#magic-number").text(goalNumber);
+//     console.log(goalNumber);
 
-var gem3 = Math.floor(Math.random()*(12) +1);
-console.log("gem3 value", gem3);
-console.log(typeof gem3);
+// var gem1 = Math.floor(Math.random()*(12) +1);
+// console.log("gem1 value", gem1); 
+// console.log(typeof gem1);
 
-var gem4 = Math.floor(Math.random()*(12) +1);
-console.log("gem4 value", gem4);
-console.log(typeof gem4);
 
-$("#magic-number").text(goalNumber);
+// $("#gem1-img").attr("data-val10;"
 
-$("#gem1-img").on("click", function() {
-    console.log("GEM 1 this function works");
-})
 
-$("#gem2-img").on("click", function() {
-    console.log("GEM 2 this function works");
-})
+// var gem2 =  Math.floor(Math.random()*(12) +1);
+
+
+// var gem3 = Math.floor(Math.random()*(12) +1);
+
+
+// var gem4 = Math.floor(Math.random()*(12) +1);
+
+
+// var valueArray = [];
+
+
+
+
+// $("#gem1-img").on("click", function() {
+//     console.log("GEM 1 this function works");
+// })
+
+// $("#gem2-img").on("click", function() {
+
+// })
   
-$("#gem3-img").on("click", function() {
-    console.log("GEM 3 this function works");
-})
-$("#gem4-img").on("click", function() {
-    console.log("GEM 4 this function works");
-})
+// $("#gem3-img").on("click", function() {
+   
+// })
+// $("#gem4-img").on("click", function() {
+   
+// })
+
+
+
