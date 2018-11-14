@@ -1,13 +1,13 @@
 
 
-var goalNumber = ""
-var gem1 = Math.floor(Math.random()*(12) +1);
-var gem2 = Math.floor(Math.random()*(12) +1);
-var gem3 = Math.floor(Math.random()*(12) +1);
-var gem4 = Math.floor(Math.random()*(12) +1);
-var wins = 0;
-var losses = 0;
-var counter = 0;
+var goalNumber = "..."
+var gem1 = "" //Math.floor(Math.random()*(12) +1);
+var gem2 = "" //Math.floor(Math.random()*(12) +1);
+var gem3 = "" //Math.floor(Math.random()*(12) +1);
+var gem4 = "" //Math.floor(Math.random()*(12) +1); 
+var wins = 
+var losses = 
+var counter =
 
 
 function randomValues() {
@@ -16,7 +16,7 @@ function randomValues() {
     gem2 = Math.floor(Math.random()*(12) +1);
     gem3 = Math.floor(Math.random()*(12) +1);
     gem4 = Math.floor(Math.random()*(12) +1);
-}
+};
 
 
 

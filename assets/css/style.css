@@ -1,17 +1,30 @@
 .container {
     margin-bottom: 50px;
 }
-
+#score-board {
+    text-align: center;
+}
+#win-total {
+    display: inline;
+}
+#loss-total {
+    display: inline;
+}
 .display-4 {
     font-family: 'Chakra Petch';
     font-size: 5rem;
     font-weight: 300;  
 }    
- 
+ .col-sm {
+     box-align: center;
+ }
+.card {
+    width: 250px;
+
+}
 .card-header {
-    font-family: 'Chakra Petch';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     color: rgb(73, 7, 160);
  }
@@ -20,6 +33,13 @@
     font-size: 24px;
     text-align: center;
  }
+
+ #current-total{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+ }
+ 
 
  .btn-primary {
     
