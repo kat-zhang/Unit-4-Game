@@ -13,16 +13,15 @@ var counter =0;
 
 function  randomGoal (){
     goalNumber = Math.floor(Math.random()*(102) + 19);
-   console.log(goalNumber);
+   //console.log(goalNumber);
     $("#magic-number").text(goalNumber);
 };
 
 function gemValue() {
-    gem1 = Math.floor(Math.random()*(12) + 1);
-    gem2 = Math.floor(Math.random()*(12) + 1);
-    gem3 = Math.floor(Math.random()*(12) + 1);
-    gem4 = Math.floor(Math.random()*(12) + 1);
-    console.log(gem1);
+    return Math.floor(Math.random()*(12) + 1);
+    //console.log(gem1,gem2,gem3,gem4);
+    //console.log(typeof gem1);
+    $()
 }
 
 
