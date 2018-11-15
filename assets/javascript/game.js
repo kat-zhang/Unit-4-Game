@@ -1,13 +1,20 @@
 $(document).ready(function() {
-    var goalRandom =;
-    var gem1 = ;
-    var gem2 =;
-    var gem3 =;
-    var gem4 =;
+    var goalNumber =[]
+    var gem1 = []
+    var gem2 =[]
+    var gem3 = []
+    var gem4 = []
 
     var wins = 0;
     var losses = 0;
     var counter = 0;
+
+    $("#gem1-img").on("click", function() {
+        console.log("GEM 1 this function works");
+    })
+
+
+
 
     function randomGoal () {
         goalNumber = Math.floor(Math.random()*(102) + 19);
@@ -23,22 +30,22 @@ $(document).ready(function() {
 
     function playValues () {
         $("#magic-number").text(goalNumber);
-        $("#gem1-img").text(gem1);
-        $("#gem2-img").text(gem2);
-        $("#gem3-img").text(gem3);
-        $("#gem4-img").text(gem4);
+        $("#gem1-pic").attr("data-value",gem1);
+        $("#gem2-img").attr("data-value",gem2);
+        $("#gem3-img").attr("data-value",gem3);
+        $("#gem4-img").attr("data-value",gem4);
         $("#current-total").text(counter);
         $("#win-total").text(wins);
         $("#loss-total").text(losses);
 
     }   
 
-}
+})
 
 
-// $("#gem1-img").on("click", function() {
-//     console.log("GEM 1 this function works");
-// })
+$("#gem1-img").on("click", function() {
+    console.log("GEM 1 this function works");
+})
 
 // $("#gem2-img").on("click", function() {
 
