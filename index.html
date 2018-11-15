@@ -9,72 +9,81 @@
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /><link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Encode+Sans+Condensed" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Encode+Sans+Condensed" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
- 
+
 </head>
+
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4 text-center"> Crystal Collector</h1>
-        <!-- <hr class="my-4">
+  <div class="jumbotron">
+    <h1 class="display-4 text-center"> Crystal Collector</h1>
+
+    <div id="score-board">
+      <p id="win-total" class="card-text"> Wins:</p> |
+      <p id="loss-total" class="card-text"> Losses: </p>
+    </div>
+    <!-- <hr class="my-4">
         <p class="lead"> Bad vibes are upon you!</p> <p class="lead"> The Magic Number determines the energy needed to keep the bad vibes at bay.<br>
         Click on the crystals to collect energy and reveal their value. Beware of surpassing the Magic Number, excess energy also brings bad vibes!!</p> -->
-        
-      </div>   
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card">
-        <div class="card-header">
-          Magic Number
-        </div>
-        <div class="card-body">
-          <p id="magic-number" class="card-text">...</p>
-        </div>
-      </div>
-          </div>      
-          <div class="col-sm">
-          <div class="card">
-        <div class="card-header">
-          Energy Collected
-        </div>
-        <div class="card-body">
-          <p id="current-total" class="card-text"></p>
-        </div>
-      </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+
+        <div class="col-sm-2">
           </div>
-          
-          <div class="col-sm">
-           <div class="card">
-        <div class="card-header">
-          Game Stats
-        </div>
-        <div class="card-body">
-          <p id="win-total" class="card-text"> Wins:</p>
-          <p id="loss-total" class="card-text"> Losses: </p>
-        </div>
-      </div>
+         
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-header">
+            Magic Number
+          </div>
+          <div class="card-body">
+            <p id="magic-number" class="card-text">...</p>
           </div>
         </div>
       </div>
-<div class="row">
-    <div class="col" ><img src="assets/images/gem1.jpg" class="rounded mx-auto d-block" alt="..."></div>
+      <div class="col-sm-2">
 
-    <div class="col"><img src="assets/images/gem2.jpg" class="rounded mx-auto d-block" alt="..." ></div>
+      </div>
 
-    <div class="col" ><img src="assets/images/gem3.jpg" class="rounded mx-auto d-block" alt="..."></div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-header">
+            Energy Collected
+          </div>
+          <div class="card-body">
+            <p id="current-total" class="card-text">...</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="col" ><img src="assets/images/gem4.jpg" class="rounded mx-auto d-block" alt="..."></div>
+      <div class="col-sm-2">
+        </div>
 
-</div>
-      
-      
-      
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"><img src="assets/images/gem1.jpg"  id="gem1-image"  class="rounded mx-auto d-block gem-image" alt="..."></div>
+
+    <div class="col-sm-3"><img src="assets/images/gem2.jpg"  id="gem2-image"  class="rounded mx-auto d-block gem-image" alt="..."></div>
+
+    <div class="col-sm-3"><img src="assets/images/gem3.jpg" id="gem3-image"  class="rounded mx-auto d-block gem-image" alt="..."></div>
+
+    <div class="col-sm-3"><img src="assets/images/gem4.jpg"  id="gem4-image"  class="rounded mx-auto d-block gem-image" alt="..."></div>
+
+  </div>
 
 
 
-<script src="assets/javascript/game.js"></script>
+
+
+  <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

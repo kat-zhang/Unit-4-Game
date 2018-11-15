@@ -1,39 +1,39 @@
+$(document).ready(function() {
+    var goalRandom =;
+    var gem1 = ;
+    var gem2 =;
+    var gem3 =;
+    var gem4 =;
 
+    var wins = 0;
+    var losses = 0;
+    var counter = 0;
 
-var goalNumber = "..."
-var gem1 = "" //Math.floor(Math.random()*(12) +1);
-var gem2 = "" //Math.floor(Math.random()*(12) +1);
-var gem3 = "" //Math.floor(Math.random()*(12) +1);
-var gem4 = "" //Math.floor(Math.random()*(12) +1); 
-var wins = 
-var losses = 
-var counter =
+    function randomGoal () {
+        goalNumber = Math.floor(Math.random()*(102) + 19);
+       
+    }
 
+    function gemValues () {
+        gem1 = Math.floor(Math.random()*(102) + 19);
+        gem2 = Math.floor(Math.random()*(102) + 19);
+        gem3 = Math.floor(Math.random()*(102) + 19);
+        gem4 = Math.floor(Math.random()*(102) + 19);
+    }
 
-function randomValues() {
-    goalNumber = Math.floor(Math.random()*(102)+19);
-    gem1 = Math.floor(Math.random()*(12) +1);
-    gem2 = Math.floor(Math.random()*(12) +1);
-    gem3 = Math.floor(Math.random()*(12) +1);
-    gem4 = Math.floor(Math.random()*(12) +1);
-};
+    function playValues () {
+        $("#magic-number").text(goalNumber);
+        $("#gem1-img").text(gem1);
+        $("#gem2-img").text(gem2);
+        $("#gem3-img").text(gem3);
+        $("#gem4-img").text(gem4);
+        $("#current-total").text(counter);
+        $("#win-total").text(wins);
+        $("#loss-total").text(losses);
 
-
-
-console.log("magic Number", goalNumber);
-console.log(typeof goalNumber);   
-
-console.log("gem1 value", gem1); 
-console.log(typeof gem1);
-
-console.log("gem2 value",gem2);
-console.log(typeof gem2);
-
-
-function gameValues() {
+    }   
 
 }
-
 
 
 // $("#gem1-img").on("click", function() {
