@@ -12,9 +12,7 @@ var wins = 0;
 var losses = 0; 
 //console.log(gem1,gem2,gem3,gem4);
 //console.log(typeof gem1);
-var counter = 0;
-
-
+var scoreCounter = 0;
 
     function  randomGoal() {
         goalNumber = Math.floor(Math.random()*(102) + 19);
@@ -28,7 +26,22 @@ var counter = 0;
     }
    
 
+    for (var i = 0; i < allGems.length; i++) {
+        var gemPic = $("<img>");
+        gemPic.addClass("gem-pic");
+        gemPic.attr ("data-value",allGems[i]);
 
+    $(".gem-pic").on("click", function () {
+        var theValue = ($(this).attr("data-value"));
+        theValue = parseInt(theValue);
+        //console.log(this);
+        scoreCounter += theValue;
+        $(".current-total").text(scoreCounter)
+    });
+
+
+        
+    }
 
     //console.log(gem1, gem2, gem3, gem4);
     //console.log(typeof gem1);
@@ -48,7 +61,6 @@ var counter = 0;
       
 
    // }   
-
 
 // $(".gem-image").on("click", function() {
 

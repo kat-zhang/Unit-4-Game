@@ -44,7 +44,10 @@
     text-align: center;
  }
  
-
+.images {
+    box-align: center;
+    display: inline;
+}
  .btn-primary {
     
     background-color: #08b0da;
