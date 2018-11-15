@@ -1,62 +1,94 @@
-$(document).ready(function() {
-    var goalNumber =[]
-    var gem1 = []
-    var gem2 =[]
-    var gem3 = []
-    var gem4 = []
-
+// $(document).ready(function() {
+    
+    var goalNumber 
+    var gem1
+    var gem2 
+    var gem3 
+    var gem4 
+    
+    var scoreCounter = 0;
     var wins = 0;
-    var losses = 0;
-    var counter = 0;
+    var losses = 0; 
 
-    $("#gem1-img").on("click", function() {
-        console.log("GEM 1 this function works");
-    })
-
-
-
-
-    function randomGoal () {
-        goalNumber = Math.floor(Math.random()*(102) + 19);
-       
-    }
-
-    function gemValues () {
-        gem1 = Math.floor(Math.random()*(102) + 19);
-        gem2 = Math.floor(Math.random()*(102) + 19);
-        gem3 = Math.floor(Math.random()*(102) + 19);
-        gem4 = Math.floor(Math.random()*(102) + 19);
-    }
-
-    function playValues () {
-        $("#magic-number").text(goalNumber);
-        $("#gem1-pic").attr("data-value",gem1);
-        $("#gem2-img").attr("data-value",gem2);
-        $("#gem3-img").attr("data-value",gem3);
-        $("#gem4-img").attr("data-value",gem4);
-        $("#current-total").text(counter);
-        $("#win-total").text(wins);
-        $("#loss-total").text(losses);
-
-    }   
-
-})
-
-
-$("#gem1-img").on("click", function() {
-    console.log("GEM 1 this function works");
-})
-
-// $("#gem2-img").on("click", function() {
-
-// })
   
-// $("#gem3-img").on("click", function() {
-   
-// })
-// $("#gem4-img").on("click", function() {
-   
-// })
+    $("#current-total").text(scoreCounter);
+    $("#win-total").text("Wins: " + wins);
+    $("#loss-total").text("Losses: " + losses);
+    
+
+    function  randomGoal() {
+        goalNumber = Math.floor(Math.random()*(102) + 19);
+        //console.log(goalNumber);
+        $("#win-number").text(goalNumber);
+    };
+    
+    function gemValues() {
+        gem1 = Math.floor(Math.random()*(12) + 1);  
+        gem2 = Math.floor(Math.random()*(12) + 1);   
+        gem3 = Math.floor(Math.random()*(12) + 1);   
+        gem4 = Math.floor(Math.random()*(12) + 1);   
+        
+    }
+    
+
+    for (let i = 0; i < 4; i++) {
+        var images = ["#gem1-image","#gem2-image","#gem3-image","#gem4-image"];
+        $(images).attr("data-vale", gem1);
+        $(images).attr("data-value", gem2);
+        $(images).attr("data-value", gem3);
+        $(images).attr("data-value", gem4);
+
+    }  
+    
+    $(".gempic").on("click", function(){
+        
+        var theValue = ($(this).attr("data-value"));
+        theValue = parseInt(theValue);
+        scoreCounter += theValue;
+        $("#current-total").text(scoreCounter);
+
+        if (scoreCounter === goalNumber) {
+            wins++; 
+            $("#win-total").text("Wins: " + wins);
+        } else if (scoreCounter > goalNumber) {
+            lossess++; 
+            $("#loss-total").text("Losses: " + losses);
+        };
+
+        if (scoreCounter >= goalNumber) {
+            randomGoal();
+            gemValues();
+            scoreCounter.push("0");
+            scoreCounter.parseInt(scoreCounter);
+
+        }
+        
+
+
+
+    });
+
+// });
+/// if (scoreCounter === goalNumber) >> wins++
+/// else if (scoreCounter > goalNumber) >> lossess++
+/// if (scoreCounter >= goalNumber) >> new random values:
+      // call randomGoal() call gemValues()
+      // set scoreCounter to zero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
